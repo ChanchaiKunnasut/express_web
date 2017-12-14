@@ -9,9 +9,9 @@ var server = http.createServer(function(request, response) {
         "Strict-Transport-Security": "max-age=15552000",
         "Transfer-Encoding": "chunked",
         "Via": "1.1 vegur",
-        "X-Content-Type-Options": "nosniff"
-
-
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "keep-alive",
+        "Vary": ""
 
     });
     response.end("ok");
