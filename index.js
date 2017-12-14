@@ -12,7 +12,6 @@ var server = http.createServer(function(request, response) {
         "X-Content-Type-Options": "nosniff",
         "Connection": "keep-alive",
         "Vary": ""
-
     });
     response.end("ok");
 
