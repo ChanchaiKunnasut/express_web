@@ -10,8 +10,7 @@ var server = http.createServer(function(request, response) {
         "Transfer-Encoding": "chunked",
         "Via": "1.1 vegur",
         "X-Content-Type-Options": "nosniff",
-        "Connection": "keep-alive",
-        "Vary": ""
+        "Connection": "keep-alive"
     });
     response.end("ok");
 
