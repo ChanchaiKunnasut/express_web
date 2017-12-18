@@ -7,11 +7,8 @@ app.get('/',(req,res)=>{
 });
 
 app.get('/Scripts',(req,res)=>{
-    res.sendFile(path.join(__dirname+'/jquery-1.10.2.min.js'));
-});
-
-app.get('/Scripts',(req,res)=>{
-    res.sendFile(path.join(__dirname+'/jquery.signalR-2.2.2.min.js'));
+    res.sendFile(path.join(__dirname+'/Scripts/jquery-1.10.2.min.js'));
+    res.sendFile(path.join(__dirname+'/Scripts/jquery.signalR-2.2.2.min.js'));
 });
 
 const port = process.env.PORT || 1337;
